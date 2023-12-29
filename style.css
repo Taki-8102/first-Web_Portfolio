@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0a192f;
+}
+
+.section {
+    height: 90vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+.leftside, .rightside {
+    padding: 20px;
+    width: 768px;
+}
+
+/*left side*/
+.leftside {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+/* introduction*/
+.intoD {
+    margin-top: 98px;
+    color: rgb(223, 220, 220);
+    text-align: left;
+    height: 170px;
+}
+.intoD p {
+    color: #a8b2d1;
+}
+
+/* toolbar*/
+.toolbar {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+.toolbar a {
+    display: block;
+    text-decoration: none;
+    color: rgba(177, 173, 173, 0.685);
+    padding: 6px;
+    text-align: left;
+    height: 30px;
+}
+.toolbar :hover{
+    color: floralwhite;
+}
+/*show the line when airrow hover*/
+.bt-1 a {
+    left: -30px;
+    position: relative;
+    color: rgba(177, 173, 173, 0.685);
+    font-size: 16px;
+    padding: 10px 20px;
+    padding-left: 50px;
+    width: 10%;
+}
+.bt-1 a:hover::after {
+    width: 40%;
+    background: floralwhite; 
+}
+.bt-1 a::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(177, 173, 173, 0.685);
+    transition: width 0.25s ease;
+}
+
+/*right side*/
+.rightside {
+    flex: 1;
+    margin-left: 768px;
+    padding: 20px;
+    color: rgb(162, 158, 158);
+}
+.aboutinto {
+    font-size: 30px;
+    width: 520px;
+    height: fit-content;
+    position: absolute;
+    right: 100px;
+    top: 80px;
+}
+.aboutinto p {
+    font-size: medium;
+    text-align: justify;
+    text-indent: 50px;
+}
+.myskill { 
+    width: fit-content;
+    color: #ffffff;
+    font-size: 16px;
+    width: 520px;
+    margin-left: 110px;
+    height: fit-content;
+}
+.myskill_cer {
+    box-sizing: border-box;
+    border: solid 3px #747474;
+    text-align: center;
+}
+.myskill_c_pic img {
+    border: solid 3px #747474;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+td, th {
+    border: 3px solid #747474;
+    text-align: left;
+    padding: 8px;
+  }
+
+.project_case {
+    width: 520px;
+    margin-left: 110px;
+    height: fit-content;
+  }
+.project_case img {
+    margin:5px 0 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #747474;
+    border-radius: 15px;
+}
+.project_case :hover {
+    border-radius: 15px;
+    background: #0f2545;
+}
+.project_p {
+    padding: 10px 0 0 20px;
+    color: #c3c3c3;
+}
+/*contact icon*/
+.contact_icon {
+    position: absolute;
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    left: 30px;
+}
+.contact_icon i a {
+    text-decoration: none;
+    padding-inline: 10px;
+    font-size: 30px; 
+    color: rgba(177, 173, 173, 0.685); 
+}
+.contact_icon :hover {
+    color: rgb(213, 213, 213);
+}
